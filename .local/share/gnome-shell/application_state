@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="org.gnome.Nautilus.desktop" score="110" last-seen="1617315572"/>
+    <application id="org.gnome.FileRoller.desktop" score="0" last-seen="1617305365"/>
+    <application id="firefox.desktop" score="135" last-seen="1617315106"/>
+    <application id="org.gnome.Terminal.desktop" score="1302" last-seen="1617315554"/>
+    <application id="gnome-initial-setup.desktop" score="3" last-seen="1617194419"/>
+    <application id="rhythmbox.desktop" score="0" last-seen="1617302467"/>
+    <application id="yelp.desktop" score="0" last-seen="1617315332"/>
+    <application id="org.gnome.gedit.desktop" score="833" last-seen="1617314711"/>
+    <application id="update-manager.desktop" score="0" last-seen="1617194495"/>
+  </context>
+</application-state>
