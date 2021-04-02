@@ -1,12 +1,6 @@
 #!/bin/bash
-#ДАННЫЕ ПРОЦЕССОРА
-cpu_clock=`cat /proc/cpuinfo | grep "cpu MHz" | awk {'print $4'} | sed q`
-cpu_cores=`grep -o "processor" <<< "$(cat /proc/cpuinfo)" | wc -l`
-cpu_model=`cat /proc/cpuinfo | grep "model name" | sed q | sed -e "s/model name//" | sed -e "s/://" | sed -e 's/^[ \t]*//' | sed -e "s/(tm)/™/g" | sed -e "s/(C)/©/g" | sed -e "s/(R)/®/g"`
-cpu_model=`echo $cpu_model | sed -e "s/ * / /g"`
 
 #ОПРЕДЕЛЯЕМ ОС
-
 osfamily=$(cat /etc/issue.net | awk {'print $1'})
 osver=$(cat /etc/issue.net | awk {'print $2'})
 
@@ -22,7 +16,6 @@ version_core=`uname -r | sed -e "s/-/ /" | awk {'print $1'}`
 echo "┌──────────────────────────────────────────────────────────────┐"
 echo "│                     Информация о системе                     │"
 echo "└──────────────────────────────────────────────────────────────┘"
-echo "                            CPU: $cpu_cores x $cpu_clock MHz ($cpu_model)"
 echo "                             ОС: $osfamily $osver"
 echo "                 Разрядность ОС: $arch bit"
 echo "              Версия ядра Linux: $version_core"
